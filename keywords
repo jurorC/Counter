@@ -1,0 +1,28 @@
+#include<ctype.h>
+#include<string.h>
+#include<stack> 
+#include<iostream>
+#include<fstream>
+#include<cassert>
+#define MAX 100000 
+
+using namespace std;
+
+int n=0,level;
+char a[MAX];                              //Store a word of up to 100,000 characters
+int switch_num;                           //A variable that records the number of switch
+int case_num[100], case_n=0;              //A variable that records the number of case 
+int if_else_n=0, if_else_if_n=0;          //A variable that records the number of if-else and if-else-if-else
+stack<int> st;                            //Stack implementation if-else-else-if matching problem
+const char * key[] ={
+"auto","break","case","char","const",
+"continue","default","do","double",
+"else","enum","extern","float","for",
+"goto","if","int","long","register",
+"return","short","signed","sizeof",
+"static","struct","switch","typedef",
+"union","unsigned","void","volatile","while"
+} ;
+
+//Const char* array, which in order of keywords
+//There are 32 keywords
