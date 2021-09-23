@@ -1,0 +1,16 @@
+// The count ends and the result is printed
+    cout<<"total num: "<<sum<<endl;
+    if(level>=2){
+	cout<<"switch num: "<<switch_num<<endl;
+    cout<<"case num: ";
+    for(int k=1;k<=switch_num;k++)
+    cout<<case_num[k]<<" ";
+    cout<<endl;
+ }
+    if(level>=3){
+	pop0();
+ 	cout<<"if-else num: "<<if_else_n<<endl;
+ }
+    if(level==4){
+ 	cout<<"if-elseif-else num: "<<if_else_if_n<<endl;
+ }
