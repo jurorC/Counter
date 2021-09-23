@@ -1,0 +1,15 @@
+void readFile(string file)
+{
+    ifstream infile; 
+    infile.open(file.data());     // Connect the file stream object to the file 
+    assert(infile.is_open());     // If it fails, an error message is output and the program is terminated
+	char c;
+    infile >> noskipws;
+    while (!infile.eof())
+    {
+        infile>>c;
+        a[n++] = c;
+    }
+	infile.close();               // Close file reading   
+    count();          
+}
