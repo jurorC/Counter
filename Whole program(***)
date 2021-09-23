@@ -130,18 +130,18 @@ void count(){
   
     // The count ends and the result is printed
     cout<<"total num: "<<sum<<endl;
-    if(level>=2){
+    if(level>=2){                                 // switch-case structure
 	cout<<"switch num: "<<switch_num<<endl;
     cout<<"case num: ";
     for(int k=1;k<=switch_num;k++)
     cout<<case_num[k]<<" ";
     cout<<endl;
  }
-    if(level>=3){
+    if(level>=3){                                 // if-else structure
 	pop0();
  	cout<<"if-else num: "<<if_else_n<<endl;
  }
-    if(level==4){
+    if(level==4){                                 // if-elseif-else structure
  	cout<<"if-elseif-else num: "<<if_else_if_n<<endl;
  }
 }
