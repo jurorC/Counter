@@ -1,0 +1,7 @@
+int main(){
+	string s;
+	cin>> s;                      // input the file name
+	cin>>level;                   //input the level(requirement) you want to include in (1,2,3,4)
+	readFile(s);
+	return 0;
+}
